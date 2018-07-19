@@ -53,8 +53,6 @@ public class Home extends HttpServlet {
                 }
                 out.close();
                 connection.close();
-
-
             }catch (SQLException sqle){
                 sqle.printStackTrace();
             }
@@ -76,13 +74,11 @@ public class Home extends HttpServlet {
         }
         System.out.println("Response" + response);
 
-
+        JSONObject responseObject = new JSONObject(response);
         try {
-            //Mi connetto al db
-            JSONArray jsonArray = new JSONArray(response);
-
-            for (int i = 0; i < jsonArray.length(); i++){
-                JSONObject log = jsonArray.getJSONObject(i);
+            JSONArray  logsArray = new JSONArray(responseObject.getJSONArray("logs"));
+            for (int i = 0; i< logsArray.length(); i++){
+                JSONObject log = logsArray.getJSONObject(i);
                 //Salvo nel db
                 Connection connection;
                 connection = SqlUtils.getConnectionHeroku();
