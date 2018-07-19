@@ -78,9 +78,9 @@ public class Home extends HttpServlet {
         JSONObject jsonObject = new JSONObject(response);
         //Mi connetto al db
 
-        /*
+
         try {
-            //JSONObject logs = jsonObject.getJSONObject("logs");
+            JSONArray logs = jsonObject.getJSONArray("logs");
 
             for (int i = 0; i < logs.length(); i++){
                 JSONObject log = logs.getJSONObject(i);
@@ -95,6 +95,8 @@ public class Home extends HttpServlet {
             }
         } catch (JSONException e) {
             e.printStackTrace();
-        }*/
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
