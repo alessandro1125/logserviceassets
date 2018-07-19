@@ -75,15 +75,14 @@ public class Home extends HttpServlet {
             response.append(new String(buffer));
         }
         System.out.println("Response" + response);
-        JSONObject jsonObject = new JSONObject(response);
-        //Mi connetto al db
 
 
         try {
-            JSONArray logs = jsonObject.getJSONArray("logs");
+            //Mi connetto al db
+            JSONArray jsonArray = new JSONArray(response);
 
-            for (int i = 0; i < logs.length(); i++){
-                JSONObject log = logs.getJSONObject(i);
+            for (int i = 0; i < jsonArray.length(); i++){
+                JSONObject log = jsonArray.getJSONObject(i);
                 //Salvo nel db
                 Connection connection;
                 connection = SqlUtils.getConnectionHeroku();
