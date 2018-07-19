@@ -78,8 +78,9 @@ public class Home extends HttpServlet {
         //Mi connetto al db
 
         try {
-            JSONArray logs = jsonObject.getJSONArray("logs");
-            for (int i = 0; i < logs.length(); i++){
+            JSONObject logs = jsonObject.getJSONObject("logs");
+
+            /*for (int i = 0; i < logs.length(); i++){
                 JSONObject log = logs.getJSONObject(i);
                 //Salvo nel db
                 Connection connection;
@@ -89,11 +90,9 @@ public class Home extends HttpServlet {
                 datas.put("value", log.getString("value"));
                 SqlUtils.sqlAdd(connection, datas, "logs");
                 connection.close();
-            }
+            }*/
         } catch (JSONException e) {
             e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        } 
     }
 }

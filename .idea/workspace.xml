@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365d0121-b56a-4c2f-8967-a7d5ee1c853c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,11 +36,10 @@
       <file leaf-file-name="Home.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="918">
+              <caret line="95" column="10" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2741#2757#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,9 +95,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
+    <option name="x" value="51" />
     <option name="y" value="23" />
-    <option name="width" value="1865" />
+    <option name="width" value="1869" />
     <option name="height" value="1177" />
   </component>
   <component name="ProjectView">
@@ -238,15 +236,15 @@
       <option name="presentableId" value="Default" />
       <updated>1531983377064</updated>
       <workItem from="1531983397124" duration="2934000" />
-      <workItem from="1531991765120" duration="1458000" />
+      <workItem from="1531991765120" duration="1725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4392000" />
+    <option name="totallyTimeSpent" value="4659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="23" width="1865" height="1177" extended-state="0" />
+    <frame x="51" y="23" width="1869" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -270,7 +268,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24879357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24826111" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -313,7 +311,6 @@
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2741#2757#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -340,11 +337,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="918">
+          <caret line="95" column="10" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2741#2757#0" expanded="true" />
           </folding>
         </state>
       </provider>
