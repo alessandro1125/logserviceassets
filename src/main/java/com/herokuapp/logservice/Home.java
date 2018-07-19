@@ -74,13 +74,15 @@ public class Home extends HttpServlet {
         {
             response.append(new String(buffer));
         }
+        System.out.println("Response" + response);
         JSONObject jsonObject = new JSONObject(response);
         //Mi connetto al db
 
+        /*
         try {
-            JSONObject logs = jsonObject.getJSONObject("logs");
+            //JSONObject logs = jsonObject.getJSONObject("logs");
 
-            /*for (int i = 0; i < logs.length(); i++){
+            for (int i = 0; i < logs.length(); i++){
                 JSONObject log = logs.getJSONObject(i);
                 //Salvo nel db
                 Connection connection;
@@ -90,9 +92,9 @@ public class Home extends HttpServlet {
                 datas.put("value", log.getString("value"));
                 SqlUtils.sqlAdd(connection, datas, "logs");
                 connection.close();
-            }*/
+            }
         } catch (JSONException e) {
             e.printStackTrace();
-        } 
+        }*/
     }
 }
