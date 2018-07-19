@@ -76,7 +76,8 @@ public class Home extends HttpServlet {
 
 
         try {
-            JSONArray logsArray = new JSONArray(response);
+            JSONObject logsObj = new JSONObject(response);
+            JSONArray logsArray = logsObj.getJSONArray("logs");
             //JSONArray  logsArray = new JSONArray(responseObject.getJSONArray("logs"));
             for (int i = 0; i< logsArray.length(); i++){
                 JSONObject log = logsArray.getJSONObject(i);
