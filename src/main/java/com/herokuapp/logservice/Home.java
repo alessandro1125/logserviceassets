@@ -27,39 +27,7 @@ import java.util.HashMap;
 public class Home extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        //Read logs
-        OutputStream out = resp.getOutputStream();
-        try {
-            //Mi connetto al db
-            Connection connection;
-            connection = SqlUtils.getConnectionHeroku();
 
-            //Faccio una chiamata al db
-            Statement statement;
-            String query;
-
-            query = "SELECT * FROM logs";
-
-            try{
-                statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery(query);
-
-                while (resultSet.next()){
-                    String output = "";
-                    output += resultSet.getString("time");
-                    output += "\t";
-                    output += resultSet.getString("value");
-                    out.write(output.getBytes());
-                    output += "\n";
-                }
-                out.close();
-                connection.close();
-            }catch (SQLException sqle){
-                sqle.printStackTrace();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     @Override
