@@ -73,15 +73,13 @@ public class Home extends HttpServlet {
         {
             response.append(new String(buffer));
         }
+
         System.out.println("Response: " + response);
 
 
         try {
-
-            /*JSONObject object = new JSONObject(response);
-            JSONArray array = object.getJSONArray("logs");*/
-
-            JSONArray array = new JSONArray(response);
+            JSONObject object = new JSONObject(response.toString());
+            JSONArray array = object.getJSONArray("logs");
 
             for (int i = 0; i< array.length(); i++){
                 JSONObject log = array.getJSONObject(i);
