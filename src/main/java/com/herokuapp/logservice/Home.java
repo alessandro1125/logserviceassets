@@ -20,8 +20,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 
 @WebServlet(
         name = "HomeServlet",
@@ -59,12 +63,12 @@ public class Home extends HttpServlet {
                 connection = SqlUtils.getConnectionHeroku();
                 HashMap<String, String> datas = new HashMap();
 
-                Date expiry = new Date(log.getInt("time"));
-                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-                String text = formatter.format(expiry);
+                LocalDateTime dateTime = LocalDateTime.ofEpochSecond(log.getInt("time"), 0, ZoneOffset.ofHours(2));
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE,MMMM d,yyyy h:mm,a", Locale.ENGLISH);
+                String formattedDate = dateTime.format(formatter);
 
                 datas.put("time", Integer.toString(log.getInt("time")));
-                datas.put("timeread", text);
+                datas.put("timeread", formattedDate);
                 datas.put("value", log.getString("value"));
                 SqlUtils.sqlAdd(connection, datas, "logs");
                 connection.close();
