@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="783">
-              <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,12 +258,12 @@
       <updated>1531983377064</updated>
       <workItem from="1531983397124" duration="2934000" />
       <workItem from="1531991765120" duration="6958000" />
-      <workItem from="1532069752188" duration="3268000" />
+      <workItem from="1532069752188" duration="3408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13160000" />
+    <option name="totallyTimeSpent" value="13300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1864" height="1177" extended-state="6" />
@@ -394,7 +394,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
-          <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

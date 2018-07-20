@@ -64,7 +64,7 @@ public class Home extends HttpServlet {
                 String text = formatter.format(expiry);
 
                 datas.put("time", Integer.toString(log.getInt("time")));
-                datas.put("timeReal", text);
+                datas.put("timeread", text);
                 datas.put("value", log.getString("value"));
                 SqlUtils.sqlAdd(connection, datas, "logs");
                 connection.close();
