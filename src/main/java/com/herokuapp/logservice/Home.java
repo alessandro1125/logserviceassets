@@ -5,6 +5,7 @@ import com.assetx.libraries.utils.SqlUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.omg.CORBA.Any;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.annotation.WebServlet;
@@ -18,6 +19,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 @WebServlet(
@@ -54,8 +57,14 @@ public class Home extends HttpServlet {
                 //Salvo nel db
                 Connection connection;
                 connection = SqlUtils.getConnectionHeroku();
-                HashMap<String, String> datas = new HashMap<String, String>();
-                datas.put("time", log.getString("time"));
+                HashMap<String, String> datas = new HashMap();
+
+                Date expiry = new Date(log.getInt("time"));
+                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                String text = formatter.format(expiry);
+
+                datas.put("time", Integer.toString(log.getInt("time")));
+                datas.put("timeReal", text);
                 datas.put("value", log.getString("value"));
                 SqlUtils.sqlAdd(connection, datas, "logs");
                 connection.close();
