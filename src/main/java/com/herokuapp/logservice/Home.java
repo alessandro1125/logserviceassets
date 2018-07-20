@@ -70,7 +70,7 @@ public class Home extends HttpServlet {
                 datas.put("time", Integer.toString(log.getInt("time")));
                 datas.put("timeread", formattedDate);
                 datas.put("value", log.getString("value"));
-                datas.put("idDevice", log.getString("id_device"));
+                datas.put("id_device", log.getString("id_device"));
                 SqlUtils.sqlAdd(connection, datas, "logs");
                 connection.close();
             }
