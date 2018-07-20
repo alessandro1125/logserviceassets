@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365d0121-b56a-4c2f-8967-a7d5ee1c853c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/herokuapp/logservice/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/logList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/logList.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +49,8 @@
       <file leaf-file-name="logList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/logList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="813">
-              <caret line="259" column="29" lean-forward="true" selection-start-line="259" selection-start-column="29" selection-end-line="259" selection-end-column="29" />
+            <state relative-caret-position="693">
+              <caret line="251" column="74" lean-forward="true" selection-start-line="251" selection-start-column="74" selection-end-line="251" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -259,12 +259,12 @@
       <updated>1531983377064</updated>
       <workItem from="1531983397124" duration="2934000" />
       <workItem from="1531991765120" duration="6958000" />
-      <workItem from="1532069752188" duration="2640000" />
+      <workItem from="1532069752188" duration="2690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12532000" />
+    <option name="totallyTimeSpent" value="12582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1864" height="1177" extended-state="6" />
@@ -400,8 +400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/logList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="259" column="29" lean-forward="true" selection-start-line="259" selection-start-column="29" selection-end-line="259" selection-end-column="29" />
+        <state relative-caret-position="693">
+          <caret line="251" column="74" lean-forward="true" selection-start-line="251" selection-start-column="74" selection-end-line="251" selection-end-column="74" />
         </state>
       </provider>
     </entry>

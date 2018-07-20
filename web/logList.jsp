@@ -247,9 +247,9 @@
 
                         while (resultSet.next()){
                 %>
-                <tr><td><%=resultSet.getString("time")%></td>
+                <tr><td><%=resultSet.getInt("time")%></td>
                         <%
-                            Date expiry = new Date(Long.parseLong(resultSet.getString("time")));
+                            Date expiry = new Date(resultSet.getInt("time"));
                             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
                             Date date = new Date();
                             String text = formatter.format(expiry);
