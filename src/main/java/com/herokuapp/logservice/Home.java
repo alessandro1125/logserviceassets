@@ -76,11 +76,12 @@ public class Home extends HttpServlet {
 
 
         try {
-            JSONObject logsObj = new JSONObject(response);
-            JSONArray logsArray = logsObj.getJSONArray("logs");
-            //JSONArray  logsArray = new JSONArray(responseObject.getJSONArray("logs"));
-            for (int i = 0; i< logsArray.length(); i++){
-                JSONObject log = logsArray.getJSONObject(i);
+
+            JSONObject object = new JSONObject(response);
+            JSONArray array = object.getJSONArray("logs");
+
+            for (int i = 0; i< array.length(); i++){
+                JSONObject log = array.getJSONObject(i);
                 //Salvo nel db
                 Connection connection;
                 connection = SqlUtils.getConnectionHeroku();
