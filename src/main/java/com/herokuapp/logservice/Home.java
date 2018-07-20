@@ -50,6 +50,7 @@ public class Home extends HttpServlet {
                     output += "\t";
                     output += resultSet.getString("value");
                     out.write(output.getBytes());
+                    output += "\n";
                 }
                 out.close();
                 connection.close();
@@ -68,17 +69,19 @@ public class Home extends HttpServlet {
         int count;
         byte[] buffer = new byte[25000];
         StringBuilder response = new StringBuilder();
-        while ((count = in.read(buffer)) > 0)
+        while (in.read(buffer) > 0)
         {
             response.append(new String(buffer));
         }
-        System.out.println("Response" + response);
+        System.out.println("Response: " + response);
 
 
         try {
 
-            JSONObject object = new JSONObject(response);
-            JSONArray array = object.getJSONArray("logs");
+            /*JSONObject object = new JSONObject(response);
+            JSONArray array = object.getJSONArray("logs");*/
+
+            JSONArray array = new JSONArray(response);
 
             for (int i = 0; i< array.length(); i++){
                 JSONObject log = array.getJSONObject(i);
